@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>
+      Trend It
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button *ngIf="!currUser" ion-button (click)="login()" class="animated bounceInDown" full>Login</button>
+  <ion-list *ngFor="let t of trends | async">
+    <ion-card (swipe)="remove(t)">
+      <ion-item>
+        <ion-avatar>
+          <img [src]="currUser.picture" alt=""/>
+        </ion-avatar>
+        <h1>{{t.title}}</h1>
+        <p style="font-style:italic;">{{t.time}}</p>
+      </ion-item>
+      <ion-item>
+        <img [src]="t.pic">
+      </ion-item>
+    </ion-card>
+  </ion-list>
+</ion-content>
+<ion-footer>
+  <ion-segment *ngIf="currUser">
+    <ion-segment-button (click)="addTrend()">
+      <ion-icon name="add"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button>
+
+    </ion-segment-button>
+    <ion-segment-button>
+
+    </ion-segment-button>
+  </ion-segment>
+</ion-footer>

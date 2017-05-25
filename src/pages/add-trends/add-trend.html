@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Add Trend</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-card *ngIf="successMessage" class="animated bounceIn">
+        <h1 text-center>Trend Added!</h1>
+    </ion-card>
+    <ion-list inset>
+        <ion-item>
+            <ion-label>Title</ion-label>
+            <ion-input type="text" [(ngModel)]="trend.title"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Description</ion-label>
+            <ion-textarea rows="6" [(ngModel)]="trend.desc"></ion-textarea>
+        </ion-item>
+        <ion-item>
+            <ion-label>Picture URL</ion-label>
+            <ion-input type="text" [(ngModel)]="trend.pic"></ion-input>    
+        </ion-item> 
+    </ion-list>
+    <button ion-button (click)="addTrend()" full>
+        <ion-icon name="add"></ion-icon>
+    </button>
+</ion-content>
