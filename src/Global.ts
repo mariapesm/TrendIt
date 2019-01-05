@@ -7,7 +7,7 @@ declare var Auth0Lock: any;
 export class Global{
     currUser: any;
     authError: any;
-    lock = new Auth0Lock('n1VT7hH13s4SRJrf9o51ERe1C5Zu0hb2', 'dsykes.auth0.com', {});
+    lock = new Auth0Lock('qeAOUbepiq3o2OPh6K72RxAKsU7vAPui', 'alexuser.auth0.com', {});
     constructor(public navCtrl: NavController, public af: AngularFireDatabase){
         this.currUser = JSON.parse(localStorage.getItem('profile'));
         let users = this.af.list('/Users');
