@@ -12,12 +12,12 @@ import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {AngularFireModule} from 'angularfire2';
 
 export const firebaseConfig = {
-    apiKey: "AIzaSyAHd72_MCuR65Nj4QqcCD09kJcpfDxJzKQ",
-    authDomain: "trendit-ab04c.firebaseapp.com",
-    databaseURL: "https://trendit-ab04c.firebaseio.com",
-    projectId: "trendit-ab04c",
-    storageBucket: "trendit-ab04c.appspot.com",
-    messagingSenderId: "382510013108"
+     apiKey: "AIzaSyAO4JY3phcUM5XNQSrskipNMyWvne5FT7Y",
+    authDomain: "pinclone-75ba3.firebaseapp.com",
+    databaseURL: "https://pinclone-75ba3.firebaseio.com",
+    projectId: "pinclone-75ba3",
+    storageBucket: "pinclone-75ba3.appspot.com",
+    messagingSenderId: "337334617922"
 }
 
 @NgModule({
